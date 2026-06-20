@@ -1,0 +1,137 @@
+/* CSS Sederhana & Layouting mirip pada gambar */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #34495e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-body {
+    padding: 25px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* 1. Kriteria Form Input Stylings */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #80bdff;
+    background-color: #ffffff;
+}
+
+/* 5. Fitur Tambahan (Tombol) */
+.btn-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-hitung {
+    background-color: #1e7e34;
+    color: white;
+}
+
+.btn-hitung:hover {
+    background-color: #19692c;
+}
+
+.btn-reset {
+    background-color: #bd2130;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #a01c27;
+}
+
+/* 3 & 5. Hasil Tampilan menggunakan Card hijau muda */
+.result-card {
+    margin-top: 25px;
+    background-color: #e2f0d9;
+    border: 1px solid #b4c6e7;
+    border-radius: 6px;
+    padding: 20px;
+    display: none; /* Disembunyikan di awal */
+}
+
+.result-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #b4c6e7;
+    padding-bottom: 5px;
+}
+
+.result-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.result-item span {
+    font-weight: bold;
+}

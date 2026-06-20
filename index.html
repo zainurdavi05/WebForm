@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi UAS - Toko Elektronik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            TOKO ELEKTRONIK
+        </div>
+        
+        <div class="form-body">
+            <div class="form-title">Form Transaksi</div>
+            
+            <div class="form-group">
+                <label for="namaPelanggan">Nama Pelanggan</label>
+                <input type="text" id="namaPelanggan" autocomplete="off">
+            </div>
+            
+            <div class="form-group">
+                <label for="namaProduk">Nama Produk</label>
+                <input type="text" id="namaProduk" autocomplete="off">
+            </div>
+            
+            <div class="form-group">
+                <label for="hargaProduk">Harga Produk</label>
+                <input type="text" id="hargaProduk" autocomplete="off">
+            </div>
+            
+            <div class="form-group">
+                <label for="jumlahPembelian">Jumlah Pembelian</label>
+                <input type="text" id="jumlahPembelian" autocomplete="off">
+            </div>
+            
+            <div class="btn-container">
+                <button class="btn btn-hitung" onclick="hitungTransaksi()">Hitung</button>
+                <button class="btn btn-reset" onclick="resetForm()">Reset</button>
+            </div>
+            
+            <div class="result-card" id="hasilCard">
+                <h3>Hasil Perhitungan</h3>
+                <div class="result-item">Nama Pelanggan : <span id="outNamaPelanggan">-</span></div>
+                <div class="result-item">Nama Produk : <span id="outNamaProduk">-</span></div>
+                <div class="result-item">Total Belanja : <span id="outTotalBelanja">-</span></div>
+                <div class="result-item">Potongan : <span id="outPotongan">-</span></div>
+                <div class="result-item">Total Bayar : <span id="outTotalBayar">-</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
